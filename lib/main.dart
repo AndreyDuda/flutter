@@ -17,13 +17,31 @@ class MyApp extends StatelessWidget {
           title: Text('Duda Andrey'),
           centerTitle: true,
         ),
-        body: Center(
-          child: Text('Body application', style: TextStyle(
-            fontSize: 20,
-            color: Colors.black,
-            fontFamily: 'Times new Roman'
-        )
-          ),),
+        body: Row(
+          children: [
+            Column(
+              children: [
+                Text('Hello'),
+                Text('Hello'),
+                Text('Hello'),
+              ],
+            ),
+            Column(
+              children: [
+                Text('Hello'),
+                Text('Hello'),
+                Text('Hello'),
+              ],
+            )
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Text('Click'),
+          backgroundColor: Colors.deepOrange,
+          onPressed: () {
+            print('click');
+          },
+        ),
       ),
     );
   }
